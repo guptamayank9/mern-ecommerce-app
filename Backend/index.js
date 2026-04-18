@@ -15,10 +15,7 @@ app.use(express.json()); //whtevr req get autmatic convert json
 app.use(cors()); //reactjs to express to 4000port
 
 //DB CONNECT with mongodb
-mongoose
-  .connect(
-    "mongodb+srv://mayankdev:CRKnaGmMKhTNVGqh@cluster0.zbcvskl.mongodb.net/e-commerce",
-  )
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected ✅"))
   .catch((err) => console.log("MongoDB Error ❌", err));
 
