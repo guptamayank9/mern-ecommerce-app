@@ -14,7 +14,7 @@ const LoginSignUp = () => {
   const login = async () => {
     console.log("Login Function Executed", formData);
     let responseData;
-    await fetch("http://localhost:4000/login", {
+    await fetch("https://mern-ecommerce-app-1z8f.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -35,7 +35,7 @@ const LoginSignUp = () => {
   const signup = async () => {
     console.log("Sign Up Function Executed", formData);
     let responseData;
-    await fetch("http://localhost:4000/signup", {
+    await fetch("https://mern-ecommerce-app-1z8f.onrender.com/signup", {
       method: "POST",
       headers: {
         Accept: "application/json",
