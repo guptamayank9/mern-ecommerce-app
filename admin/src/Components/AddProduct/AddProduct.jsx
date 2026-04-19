@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./AddProduct.css";
 import upload_area from "../../assets/upload_area.svg";
 
+
+const API_URL = "https://mern-ecommerce-app-1z8f.onrender.com";
 const AddProduct = () => {
   const [image, setImage] = useState(false);
   const [productDetails, setProductDetails] = useState({
@@ -31,7 +33,7 @@ const AddProduct = () => {
     formData.append("product", image);
 
     //send to api
-    await fetch("http://localhost:4000/upload", {
+   await fetch(`${API_URL}/upload`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -46,7 +48,7 @@ const AddProduct = () => {
     if (responseData.success) {
       product.image = responseData.image_url;
       console.log(product);
-      await fetch("http://localhost:4000/addproduct", {
+     await fetch(`${API_URL}/addproduct`, {
         method: "POST",
         headers: {
           Accept: "application/json",
