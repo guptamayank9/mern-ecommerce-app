@@ -1,4 +1,4 @@
-const port = 4000; //port name//initialize all dependices and modules
+const port = process.env.PORT || 4000; //port name//initialize all dependices and modules
 const express = require("express"); //req expreess
 const app = express(); //use
 const mongoose = require("mongoose"); //require mongo
