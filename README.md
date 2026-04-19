@@ -19,6 +19,14 @@ This is a full stack e-commerce web application built using MongoDB, Express, Re
 * Database: MongoDB
 * Authentication: JWT
 
+## Live Links
+
+Frontend: https://mern-ecommerce-app-frontend-koga.onrender.com  
+Admin Panel: https://mern-ecommerce-app-admin-m2ij.onrender.com  
+Backend API: https://mern-ecommerce-app-1z8f.onrender.com
+
+---
+
 ## How to run
 
 ### Backend
