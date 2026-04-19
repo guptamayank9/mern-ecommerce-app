@@ -40,7 +40,7 @@ app.use("/images", express.static("upload/images"));
 app.post("/upload", upload.single("product"), (req, res) => {
   res.json({
     success: true,
-   image_url: `https://mern-ecommerce-app-1z8f.onrender.com/images/${req.file.filename}`,
+  image_url: `https://mern-ecommerce-app-1z8f.onrender.com/images/${req.file.filename}`,
   });
 });
 //crate schema for creating projects
